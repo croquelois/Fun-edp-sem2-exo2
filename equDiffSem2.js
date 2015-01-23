@@ -267,13 +267,13 @@ core of the proof
 (H(X(t)))'=\begin{pmatrix}
 \frac{\partial H}{\partial x1}(X(T))\\ 
 \frac{\partial H}{\partial x2}(X(T))
-\end{pmatrix}
+\end{pmatrix} ^T
 X'(T)
 =
 \begin{pmatrix}
 \frac{\partial H}{\partial x1}(X(T))\\ 
 \frac{\partial H}{\partial x2}(X(T))
-\end{pmatrix}
+\end{pmatrix} ^T
 \begin{pmatrix}
 \frac{\partial H}{\partial x2}(X(T))\\ 
 -\frac{\partial H}{\partial x1}(X(T))
@@ -285,6 +285,47 @@ X'(T)
 \Rightarrow
 H(X(t))=cst 
 
+CQFD
+
 */
 
+/* Proof Q8:
+
+define space of work
+
+X:\mathbb{R} \rightarrow \mathbb{R}^{2} \: and \: E:\mathbb{R}^2 \rightarrow \mathbb{R}
+
+put energy def
+
+X'(T)
+=
+\begin{pmatrix}
+-\frac{\partial H}{\partial x1}(X(T))\\ 
+-\frac{\partial H}{\partial x2}(X(T))
+\end{pmatrix}
+
+core of the proof
+
+(E(X(t)))' = \begin{pmatrix}
+\frac{\partial E}{\partial x1}(X(T))\\ 
+\frac{\partial E}{\partial x2}(X(T))
+\end{pmatrix} ^T
+X'(T)
+=
+\begin{pmatrix}
+\frac{\partial E}{\partial x1}(X(T))\\ 
+\frac{\partial E}{\partial x2}(X(T))
+\end{pmatrix}^T
+\begin{pmatrix}
+-\frac{\partial E}{\partial x1}(X(T))\\ 
+-\frac{\partial E}{\partial x2}(X(T))
+\end{pmatrix}
+=
+- \frac{\partial E}{\partial x1}(X(T)) \frac{\partial E}{\partial x1}(X(T)) - \frac{\partial E}{\partial x1}(X(T)) \frac{\partial E}{\partial x1}(X(T)) 
+= 
+- \left \| \nabla E(X(T))\right \|^2 < 0
+
+CQFD
+
+*/
 
